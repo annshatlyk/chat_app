@@ -1,11 +1,11 @@
-import 'package:chat_app/config/theme/app_theme.dart';
-import 'package:chat_app/data/services/service_locator.dart';
-import 'package:chat_app/presentation/screens/login_screen.dart';
-import 'package:chat_app/router/app_router.dart';
+import 'config/theme/app_theme.dart';
+import 'data/services/service_locator.dart';
+import 'presentation/screens/login_screen.dart';
+import 'router/app_router.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
-  // await setupServiceLocator();
+  await setupServiceLocator();
   runApp(const MyApp());
 }
 

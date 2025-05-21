@@ -7,7 +7,7 @@ class CustomTextField extends StatelessWidget {
   final TextInputType? keyboardType;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
-  final FocusNode? focusMode;
+  final FocusNode? focusNode;
   final String? Function(String?)? validator;
   const CustomTextField({
     super.key,
@@ -17,7 +17,7 @@ class CustomTextField extends StatelessWidget {
     this.keyboardType,
     this.prefixIcon,
     this.suffixIcon,
-    this.focusMode,
+    this.focusNode,
     this.validator,
   });
 
@@ -27,7 +27,7 @@ class CustomTextField extends StatelessWidget {
       controller: controller,
       obscureText: obscureText,
       keyboardType: keyboardType,
-      focusNode: focusMode,
+      focusNode: focusNode,
       validator: validator,
       decoration: InputDecoration(
         hintText: hintText,
